@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniGe</title>
+    <link rel="shortcut icon" href="./noFilter-removebg-preview.png" type="image/x-icon">
+     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        main {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #PrecioCam {
+            color: black;
+            font-size: xx-large;
+        }
+
+        #omni {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+        }
+
+        #nombre-usuario {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+
+        #enviar {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        #mensaje-error {
+            color: red;
+            margin-top: 10px;
+            font-family: "Verdana", sans-serif;
+        }
+
+        .Nav {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 5px;
+           justify-content: right;
+        }
+        
+        .Nav a {
+            text-decoration: none;
+            color: #ffffff;
+    
+        }
+
+        .Nav a:hover {
+            color: #007BFF;
+            border-bottom: 1px solid #007BFF;
+        }
+
+        #enviar {
+            background: #ff0000;
+            background-image: -webkit-linear-gradient(top, #ff0000, #ffffff);
+            background-image: -moz-linear-gradient(top, #ff0000, #ffffff);
+            background-image: -ms-linear-gradient(top, #ff0000, #ffffff);
+            background-image: -o-linear-gradient(top, #ff0000, #ffffff);
+            background-image: linear-gradient(to bottom, #ff0000, #ffffff);
+            -webkit-border-radius: 13;
+            -moz-border-radius: 13;
+            border-radius: 13px;
+            text-shadow: 2px 5px 5px #666666;
+            font-family: Courier New;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 7px 11px 6px 16px;
+            text-decoration: none;
+        }
+
+        #enviar:hover {
+            background: #d4f70d;
+            background-image: -webkit-linear-gradient(top, #d4f70d, #3498db);
+            background-image: -moz-linear-gradient(top, #d4f70d, #3498db);
+            background-image: -ms-linear-gradient(top, #d4f70d, #3498db);
+            background-image: -o-linear-gradient(top, #d4f70d, #3498db);
+            background-image: linear-gradient(to bottom, #d4f70d, #3498db);
+            text-decoration: none;
+        }   
+
+          #nombre-usuario {
+            background: #ff0000;
+            background-image: -webkit-linear-gradient(top, #ff0000, #ffffff);
+            background-image: -moz-linear-gradient(top, #ff0000, #ffffff);
+            background-image: -ms-linear-gradient(top, #ff0000, #ffffff);
+            background-image: -o-linear-gradient(top, #ff0000, #ffffff);
+            background-image: linear-gradient(to bottom, #ff0000, #ffffff);
+            -webkit-border-radius: 13;
+            -moz-border-radius: 13;
+            border-radius: 13px;
+            text-shadow: 2px 5px 5px #666666;
+            font-family: Courier New;
+            color: #000000;
+            font-size: 18px;
+            padding: 7px 11px 6px 16px;
+            text-decoration: none;
+        }
+
+
+     </style>
+   
+</head>
+
+<body>
+
+    <header>
+
+        <img src="./noFilter-removebg-preview.png" alt="logo" style="width: 20px; height: auto;">
+    <nav class="Nav">
+
+        <a href="#Inicio">Inicio</a>
+        <a href="./invencible.html">Omniman</a>
+        <a href="#contacto">Contacto</a>
+
+
+    </nav>
+</header>
+
+<main>
+
+
+
+
+    <p id="PrecioCam"    style="font-size: xx-large;"> Precio: 25,50€ </p>
+    <img src="./dh9bsx1-86060189-0ed1-4e6a-bc9d-369157c31572-2294821212.png" alt="omniman" id="omni">
+
+<br><br>
+
+    <input type="text"  id="nombre-usuario" placeholder="Tu nombre Aquí">
+    <p id="mensaje-error"></p>
+    <button id="enviar">Enviar</button>
+
+
+</main>
+
+</body>
+<script src="../main.js"> </script>
+</html>
+

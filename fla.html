@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiseta</title>
+</head>
+<body>
+    <button onclick="miCamiseta.describir(), calcularPreciofinal(miCamiseta, 1.21)">Mostrar descripción</button>
+</body>
+
+
+<script >
+
+
+
+
+    const miCamiseta = {
+        color: "rojo",
+        talla: "M",
+        modelo: "de manga corta",
+        precio: 19.99,
+
+
+        describir: function() {
+        console.log("Camiseta " + this.modelo + " de color " + this.color + ", talla " + this.talla + ", por solo $" + this.precio);
+    }    
+    };
+
+
+    function calcularPreciofinal(objetoCamiseta, impuesto) {
+        let total = objetoCamiseta.precio *  impuesto;
+        return total.toFixed(2);
+    }
+   
+
+    miCamiseta.describir();
+
+    let ticket = calcularPreciofinal(miCamiseta, 1.21);
+    alert("Precio final con impuestos: " + ticket + "€");
+
+
+
+</script>
+
+
+</html>
